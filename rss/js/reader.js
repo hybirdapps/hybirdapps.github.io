@@ -5,7 +5,8 @@ $(function(){
     hashtable['web'] = "http://web.memect.com/";
 
     var fetchContents = function(hash){
-        iframe='<iframe src="'+hashtable[hash]+'" seamless="" scrolling="no" frameborder="0" style="width: 100%;" height="800px"></iframe>';
+        iframe='<iframe src="'+hashtable[hash]+'" seamless="" scrolling="no" frameborder="0" ';
+        iframe+='style="width: 100%;height: 2000px"></iframe>';
         $(".container-fluid").html(iframe);
     };
 
