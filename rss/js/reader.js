@@ -3,6 +3,8 @@ $(function(){
     hashtable['coder'] = "http://weekly.manong.io/issues/";
     hashtable['python'] = "http://py.memect.com/";
     hashtable['web'] = "http://web.memect.com/";
+    hashtable['machinelearn'] = "http://ml.memect.com/";
+    hashtable['bigdata'] = "http://bd.memect.com/";
 
     var fetchContents = function(hash){
         iframe='<iframe src="'+hashtable[hash]+'" seamless="" scrolling="no" frameborder="0" ';
@@ -15,6 +17,8 @@ $(function(){
             "coder" : "coder",
             "python" : "python",
             "web" : "web",
+            "machinelearn" : "machinelearn",
+            "bigdata" : "bigdata",
             "*path": "web"
         },
         coder: function(){
@@ -25,7 +29,9 @@ $(function(){
         },
         web: function(){
             fetchContents('web');
-        }
+        },
+        machinelearn: function(){fetchContents('machinelearn');},
+        bigdata: function(){fetchContents('bigdata');}
     });
 
     new IndexRouterTable();
