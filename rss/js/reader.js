@@ -33,7 +33,7 @@ $(function(){
             fetchContents('web');
         },
         machinelearn: function(){fetchContents('machinelearn');},
-        bigdata: function(){fetchContents('bigdata');}
+        bigdata: function(){fetchContents('bigdata');},
         app: function(){fetchContents('app');}
     });
 
