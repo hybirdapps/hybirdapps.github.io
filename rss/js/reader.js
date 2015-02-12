@@ -5,6 +5,7 @@ $(function(){
     hashtable['web'] = "http://web.memect.com/";
     hashtable['machinelearn'] = "http://ml.memect.com/";
     hashtable['bigdata'] = "http://bd.memect.com/";
+    hashtable['app'] = "http://app.memect.com/";
 
     var fetchContents = function(hash){
         iframe='<iframe src="'+hashtable[hash]+'" seamless="" scrolling="no" frameborder="0" ';
@@ -19,6 +20,7 @@ $(function(){
             "web" : "web",
             "machinelearn" : "machinelearn",
             "bigdata" : "bigdata",
+            "app" : "app",
             "*path": "web"
         },
         coder: function(){
@@ -32,6 +34,7 @@ $(function(){
         },
         machinelearn: function(){fetchContents('machinelearn');},
         bigdata: function(){fetchContents('bigdata');}
+        app: function(){fetchContents('app');}
     });
 
     new IndexRouterTable();
