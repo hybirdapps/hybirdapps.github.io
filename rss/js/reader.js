@@ -1,6 +1,5 @@
 $(function(){
     var hashtable = {};
-    hashtable['coder'] = "http://toutiao.io/";
     hashtable['python'] = "http://py.memect.com/";
     hashtable['web'] = "http://web.memect.com/";
     hashtable['machinelearn'] = "http://ml.memect.com/";
@@ -15,16 +14,12 @@ $(function(){
 
     var IndexRouterTable = Backbone.Router.extend({
         routes: {
-            "coder" : "coder",
             "python" : "python",
             "web" : "web",
             "machinelearn" : "machinelearn",
             "bigdata" : "bigdata",
             "app" : "app",
             "*path": "web"
-        },
-        coder: function(){
-            fetchContents('coder');
         },
         python: function(){
             fetchContents('python');
